@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalendář</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8a31c1eed0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+    <i style="color: darkorange" class="fas fa-calendar-alt"></i>
+    <h1>Můj kalendář</h1>
+    <hr>
+    <a id="a1">Přehled</a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <a id="a2">Projekty</a>
+</header>
+<main>
+    <section>
+        <div id="flex">
+        <form>
+            <input id="text" type="text" placeholder="Zadej text...">
+            <select id="selecter">
+                <option>Projekt 1</option>
+            </select>
+        </form>
+        <h1 id="h1">00:00:00</h1><h1><i id="start" class="fas fa-play-circle"></i><i id="stop" class="fas fa-stop-circle"></i></h1>
+        </div>
+    </section>
+    <div id="page1">
+        <div id="divnad">
+            <h1 id="nadpis">Dnes odpracováno: 00:00:00</h1>
+            <a id="novyzaz1">Nový záznam</a>
+            <div id="prazdno"></div>
+        </div>
+        <table id="table1">
+            <thead>
+                <tr id="gray">
+                    <td>Úkol</td>
+                    <td>Projekt</td>
+                    <td>Začátek</td>
+                    <td>Konec</td>
+                    <td>Celkem</td>
+                    <td>Akce</td>
+                </tr>
+            </thead>
+            <tbody id="prehled_body">
+
+
+            </tbody>
+        </table>
+    </div>
+    <div id="page2" style="display: none;">
+        <div id="divnad">
+            <h1 id="nadpis">Projekty</h1>
+            <a id="novyzaz2">Nový záznam</a>
+            <div id="prazdno"></div>
+        </div>
+        <table  id="table2">
+            <thead>
+                <tr id="gray">
+                    <td>Název Projetku</td>
+                    <td>Celkový čas</td>
+                    <td>Akce</td>
+                </tr>
+            </thead>
+            <tbody id="projekt_body">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</main>
+</body>
+</html>
